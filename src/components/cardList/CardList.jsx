@@ -6,11 +6,7 @@ import cardInfo from '../cardInfo.json'
 function CardList() {
   return (
     <div className='cards'>
-      {
-        cardInfo && cardInfo.map(cardInfo => {
-          return (<Card />)
-        })
-      }          
+      {cardInfo.map(Card)}
     </div>
   );
 }
